@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E967DFE12409603000B163CA /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967DFE02409603000B163CA /* TaskDetailView.swift */; };
 		E9A3EC112407E03F001BF824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3EC102407E03F001BF824 /* AppDelegate.swift */; };
 		E9A3EC132407E03F001BF824 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3EC122407E03F001BF824 /* SceneDelegate.swift */; };
 		E9A3EC152407E03F001BF824 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3EC142407E03F001BF824 /* ContentView.swift */; };
 		E9A3EC172407E040001BF824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A3EC162407E040001BF824 /* Assets.xcassets */; };
 		E9A3EC1A2407E040001BF824 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A3EC192407E040001BF824 /* Preview Assets.xcassets */; };
 		E9A3EC1D2407E040001BF824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A3EC1B2407E040001BF824 /* LaunchScreen.storyboard */; };
+		E9A3EC252407E057001BF824 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3EC242407E057001BF824 /* Task.swift */; };
+		E9C464D3240D579F00A59C5D /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C464D2240D579F00A59C5D /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E967DFE02409603000B163CA /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		E9A3EC0D2407E03F001BF824 /* TS SwiftUI Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TS SwiftUI Tasks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A3EC102407E03F001BF824 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9A3EC122407E03F001BF824 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,9 @@
 		E9A3EC192407E040001BF824 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9A3EC1C2407E040001BF824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9A3EC1E2407E040001BF824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A3EC242407E057001BF824 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		E9C464D2240D579F00A59C5D /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		E9F8359D240FF20F00E210B9 /* TS SwiftUI Tasks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TS SwiftUI Tasks.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +66,13 @@
 				E9A3EC102407E03F001BF824 /* AppDelegate.swift */,
 				E9A3EC122407E03F001BF824 /* SceneDelegate.swift */,
 				E9A3EC142407E03F001BF824 /* ContentView.swift */,
+				E967DFE02409603000B163CA /* TaskDetailView.swift */,
+				E9C464D2240D579F00A59C5D /* TextView.swift */,
+				E9A3EC242407E057001BF824 /* Task.swift */,
 				E9A3EC162407E040001BF824 /* Assets.xcassets */,
 				E9A3EC1B2407E040001BF824 /* LaunchScreen.storyboard */,
 				E9A3EC1E2407E040001BF824 /* Info.plist */,
+				E9F8359D240FF20F00E210B9 /* TS SwiftUI Tasks.entitlements */,
 				E9A3EC182407E040001BF824 /* Preview Content */,
 			);
 			path = "TS SwiftUI Tasks";
@@ -146,9 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A3EC252407E057001BF824 /* Task.swift in Sources */,
 				E9A3EC112407E03F001BF824 /* AppDelegate.swift in Sources */,
 				E9A3EC132407E03F001BF824 /* SceneDelegate.swift in Sources */,
+				E9C464D3240D579F00A59C5D /* TextView.swift in Sources */,
 				E9A3EC152407E03F001BF824 /* ContentView.swift in Sources */,
+				E967DFE12409603000B163CA /* TaskDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +298,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "TS SwiftUI Tasks/TS SwiftUI Tasks.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TS SwiftUI Tasks/Preview Content\"";
 				DEVELOPMENT_TEAM = 2S49FR3REP;
 				ENABLE_PREVIEWS = YES;
@@ -295,6 +311,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "de.thomassillmann.TS-SwiftUI-Tasks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +321,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "TS SwiftUI Tasks/TS SwiftUI Tasks.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TS SwiftUI Tasks/Preview Content\"";
 				DEVELOPMENT_TEAM = 2S49FR3REP;
 				ENABLE_PREVIEWS = YES;
@@ -315,6 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "de.thomassillmann.TS-SwiftUI-Tasks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
